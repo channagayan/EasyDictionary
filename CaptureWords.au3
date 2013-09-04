@@ -32,7 +32,9 @@ Func Capture_word()
         MouseClick("left")										; click mouse ovet the word to select it
         Send("^c")											  	; send the selected word to clip board
 		$MousePos = MouseGetPos()								; get the mouse position for tooltip
-		ToolTip(Get_meaning($adoRs,$adoCon,ClipGet()), $MousePos[0], $MousePos[1],ClipGet())
+		$recivedWord=ClipGet()
+		$englishWord=StringRegExpReplace($recivedWord, '[^a-zA-Z]|\W', '')			;remove special characters from the string
+		ToolTip(Get_meaning($adoRs,$adoCon,$englishWord), $MousePos[0], $MousePos[1],$englishWord)
 EndIf
 EndFunc
 Func Get_meaning($adoRs1,$adoCon1,$word1)
