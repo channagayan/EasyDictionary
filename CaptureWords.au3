@@ -13,7 +13,7 @@
 ; Script Start - Add your code below here
 #include <Misc.au3>
 $dll = DllOpen("user32.dll")
-Local $dbname="E:\Cs\Semester 5\Software engineering project\databases\EnglishSinhala.accdb"
+Local $dbname=@ScriptDir & "\EnglishSinhala.accdb" ; database must be there in the same folder with the script
 $adoCon = ObjCreate("ADODB.Connection")
 ;$adoCon.Open("Driver={Microsoft Access Driver (*.mdb)}; DBQ=" & $dbname) ;Use this line if using MS Access 2003 and lower
 $adoCon.Open("Driver={Microsoft Access Driver (*.mdb, *.accdb)}; DBQ=" & $dbname & ";Uid=;Pwd=;") ;Use this line if using MS Access 2007 and using the .accdb file extension
