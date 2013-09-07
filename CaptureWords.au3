@@ -12,6 +12,10 @@
 
 ; Script Start - Add your code below here
 #include <Misc.au3>
+#include<Error_UDF.au3>
+
+Global $oMyError = ObjEvent("AutoIt.Error","MyErrFunc") ;error handling message
+
 $dll = DllOpen("user32.dll")
 Local $dbname=@ScriptDir & "\EnglishSinhala.accdb" ; database must be there in the same folder with the script
 $adoCon = ObjCreate("ADODB.Connection")
