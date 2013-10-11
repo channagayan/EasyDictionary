@@ -29,6 +29,7 @@
 				  IniWrite($Settings_file, "Settings", "Click", $Click)
 				  IniWrite($Settings_file, "Settings", "Time", $Time_limit)
 				  GUIDelete($hGUI2)
+				  _RestartProgram()
 				  Return
          EndSwitch
      WEnd
