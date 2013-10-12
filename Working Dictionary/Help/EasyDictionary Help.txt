@@ -1,0 +1,19 @@
+EasyDictionary Version 1.0
+
+Genaral Help
+
+How to get the meaning for English word
+
+Put mouse pointer on top of the word that you want to get the meaning.
+Click Ctrl+Left mouse Button or Double Click (This can be configured using settings menu)
+You will get the sinhala meaning near the word you clicked
+Click anywhere to hide the meaning bubble. 
+
+How to set the Key combination
+
+Right click on the EasyDictionary icon in the task bar
+Select settings menu
+Select what key combination you want
+Click save
+
+EasyDictionary supports most of the web browsers, Adobe Reader, Microsoft Office, Notepad and many other text editors and word processors.
